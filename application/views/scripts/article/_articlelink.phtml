@@ -1,0 +1,13 @@
+<?php $date = new Zend_Date($this->listing->modified); ?>
+<li>
+<a href="<?php
+echo $this->url(
+	array(
+		'controller'	=> 'article',
+		'action'		=> 'view',
+		'title'			=> $this->listing->title
+	)
+);
+?>"><?php echo $this->escape(stripslashes($this->listing->title)) ?></a>
+ - (modified by
+<?php echo $this->listing->finddefault_Model_DbTable_UsersByLastModified()->current()->real_name ?>: <?php echo $date ?>)<br /></li>

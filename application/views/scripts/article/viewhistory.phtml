@@ -1,0 +1,19 @@
+<?php
+$this->headTitle()->prepend($this->pageTitle);
+?>
+    <div id="content-body">
+        <div id="wiki-content-left">
+            <?php echo $this->menuLeft() ?>
+            <?php echo $this->searchBox() ?>
+        </div>
+        <?php echo $this->articleHeader() ?>
+        
+        <div id="wiki-content-main">
+        <br>
+<ul>
+<?php
+echo $this->partialLoop()->setObjectKey('listing')->partialLoop('article/_articlelink.phtml', $this->history) ?>
+</ul>
+
+        </div>
+    </div>

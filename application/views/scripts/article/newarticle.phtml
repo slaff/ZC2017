@@ -1,0 +1,19 @@
+<?php
+$pageTitle = $this->escape(stripslashes($this->pageTitle));
+?>
+<h2><?php echo $pageTitle ?></h2>
+
+<p>We do not have a page with this title yet.</p>
+
+<?php if (!$this->form): ?>
+<p class="error">You must be logged in to create new pages.</p>
+<?php 
+    return;
+endif;
+
+?>
+
+<p>Create a new page by entering relevant information in the text area below.</p>
+<?php echo $this->form ?>
+<?php $this->render('article/_help.phtml') ?>
+

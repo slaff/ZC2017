@@ -1,0 +1,48 @@
+2017-09-11T15:14:38+02:00 ERR (3): Invalid controller specified (robots.txt)
+#0 /usr/local/zend/var/libraries/Zend_Framework_1/1.12.20/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /usr/local/zend/var/libraries/Zend_Framework_1/1.12.20/library/Zend/Application/Bootstrap/Bootstrap.php(105): Zend_Controller_Front->dispatch()
+#2 /usr/local/zend/var/libraries/Zend_Framework_1/1.12.20/library/Zend/Application.php(384): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /var/www/html/wikiapp/public/index.php(25): Zend_Application->run()
+#4 {main}
+2017-09-11T15:14:39+02:00 ERR (3): Invalid controller specified (favicon.ico)
+#0 /usr/local/zend/var/libraries/Zend_Framework_1/1.12.20/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /usr/local/zend/var/libraries/Zend_Framework_1/1.12.20/library/Zend/Application/Bootstrap/Bootstrap.php(105): Zend_Controller_Front->dispatch()
+#2 /usr/local/zend/var/libraries/Zend_Framework_1/1.12.20/library/Zend/Application.php(384): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /var/www/html/wikiapp/public/index.php(25): Zend_Application->run()
+#4 {main}
+2017-09-11T15:14:45+02:00 ERR (3): You need to be logged in to create and edit pages!
+#0 /var/www/html/wikiapp/application/controllers/ArticleController.php(114): ArticleController->_checkAcl('31fasfd')
+#1 /usr/local/zend/var/libraries/Zend_Framework_1/1.12.20/library/Zend/Controller/Action.php(516): ArticleController->editAction()
+#2 /usr/local/zend/var/libraries/Zend_Framework_1/1.12.20/library/Zend/Controller/Dispatcher/Standard.php(308): Zend_Controller_Action->dispatch('editAction')
+#3 /usr/local/zend/var/libraries/Zend_Framework_1/1.12.20/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#4 /usr/local/zend/var/libraries/Zend_Framework_1/1.12.20/library/Zend/Application/Bootstrap/Bootstrap.php(105): Zend_Controller_Front->dispatch()
+#5 /usr/local/zend/var/libraries/Zend_Framework_1/1.12.20/library/Zend/Application.php(384): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/html/wikiapp/public/index.php(25): Zend_Application->run()
+#7 {main}
+2017-09-11T15:14:48+02:00 ERR (3): Invalid controller specified (robots.txt)
+#0 /usr/local/zend/var/libraries/Zend_Framework_1/1.12.20/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /usr/local/zend/var/libraries/Zend_Framework_1/1.12.20/library/Zend/Application/Bootstrap/Bootstrap.php(105): Zend_Controller_Front->dispatch()
+#2 /usr/local/zend/var/libraries/Zend_Framework_1/1.12.20/library/Zend/Application.php(384): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /var/www/html/wikiapp/public/index.php(25): Zend_Application->run()
+#4 {main}
+2017-09-11T15:16:37+02:00 ERR (3): You need to be logged in to create and edit pages!
+#0 /var/www/html/wikiapp/application/controllers/ArticleController.php(114): ArticleController->_checkAcl('O'Reilly')
+#1 /usr/local/zend/var/libraries/Zend_Framework_1/1.12.20/library/Zend/Controller/Action.php(516): ArticleController->editAction()
+#2 /usr/local/zend/var/libraries/Zend_Framework_1/1.12.20/library/Zend/Controller/Dispatcher/Standard.php(308): Zend_Controller_Action->dispatch('editAction')
+#3 /usr/local/zend/var/libraries/Zend_Framework_1/1.12.20/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#4 /usr/local/zend/var/libraries/Zend_Framework_1/1.12.20/library/Zend/Application/Bootstrap/Bootstrap.php(105): Zend_Controller_Front->dispatch()
+#5 /usr/local/zend/var/libraries/Zend_Framework_1/1.12.20/library/Zend/Application.php(384): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /var/www/html/wikiapp/public/index.php(25): Zend_Application->run()
+#7 {main}
+2017-09-11T15:17:43+02:00 ERR (3): Invalid controller specified (favicon.ico)
+#0 /usr/local/zend/var/libraries/Zend_Framework_1/1.12.20/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /usr/local/zend/var/libraries/Zend_Framework_1/1.12.20/library/Zend/Application/Bootstrap/Bootstrap.php(105): Zend_Controller_Front->dispatch()
+#2 /usr/local/zend/var/libraries/Zend_Framework_1/1.12.20/library/Zend/Application.php(384): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /var/www/html/wikiapp/public/index.php(25): Zend_Application->run()
+#4 {main}
+2017-09-11T15:17:56+02:00 ERR (3): Invalid controller specified (robots.txt)
+#0 /usr/local/zend/var/libraries/Zend_Framework_1/1.12.20/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /usr/local/zend/var/libraries/Zend_Framework_1/1.12.20/library/Zend/Application/Bootstrap/Bootstrap.php(105): Zend_Controller_Front->dispatch()
+#2 /usr/local/zend/var/libraries/Zend_Framework_1/1.12.20/library/Zend/Application.php(384): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /var/www/html/wikiapp/public/index.php(25): Zend_Application->run()
+#4 {main}

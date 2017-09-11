@@ -1,0 +1,23 @@
+<?php echo $this->doctype() ?>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <?php echo $this->headTitle() ?> 
+    <?php echo $this->headLink() ?>
+    <?php echo $this->headStyle() ?>
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css" />
+</head>
+<body>
+<div id="content-page">
+	<?php echo $this->header() ?> 
+    <?php echo $this->menuBar() ?>
+
+    <?php echo $this->layout()->content ?>
+
+    <div class="clear"></div>
+    <div id="footer">
+        &copy; 2009 Zend Technologies
+    </div>
+</div>
+</body>
+</html>

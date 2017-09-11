@@ -1,0 +1,18 @@
+<?php
+$this->headTitle()->prepend($this->pageTitle);
+?>
+    <div id="content-body">
+        <div id="wiki-content-left">
+            <?php echo $this->menuLeft() ?>
+            <?php echo $this->searchBox() ?>
+        </div>
+        <?php echo $this->articleHeader() ?>
+        <div id="wiki-content-main">
+<h2><?php echo $this->escape(stripslashes($this->pageTitle)) ?></h2>
+
+<p>Make changes to this article, preview and save your edits</p>
+<?php echo $this->form ?>
+<?php $this->render('article/_help.phtml') ?>
+
+        </div>
+    </div>

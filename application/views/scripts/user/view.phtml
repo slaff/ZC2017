@@ -1,0 +1,35 @@
+<?php
+$user = $this->user;
+$this->headTitle()->prepend('User Information for '.$user->real_name);
+
+?>
+    <div id="content-body">
+        <div id="wiki-content-left">
+            <?php echo $this->menuLeft() ?>
+            <?php echo $this->searchBox() ?>
+        </div>
+        <div id="wiki-content-main">
+			<h2>Account: <?php echo $this->escape($user->real_name); ?></h2>
+			<h2>Articles: </h2>
+			<p><ul><?php 
+
+foreach ($this->articles as $listing):
+	?>
+	<li><a href="<?php 
+echo $this->url(
+	array(
+		'controller'	=> 'article',
+		'action'		=> 'view',
+		'title'			=> $listing->title
+	),
+	null,
+	'true'
+)
+	?>"><?php echo $listing->title; ?></a></li>
+	<?php 
+endforeach;
+			
+			?></ul></p>
+
+        </div>
+    </div>

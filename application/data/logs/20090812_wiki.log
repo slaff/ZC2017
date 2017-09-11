@@ -1,0 +1,12 @@
+2009-08-12T16:20:33-05:00 ERR (3): Invalid controller specified (asdgasg)
+#0 C:\Program Files\Zend\ZendServer\share\ZendFramework\library\Zend\Controller\Front.php(945): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 C:\Program Files\Zend\ZendServer\share\ZendFramework\library\Zend\Application\Bootstrap\Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#2 C:\Program Files\Zend\ZendServer\share\ZendFramework\library\Zend\Application.php(328): Zend_Application_Bootstrap_Bootstrap->run()
+#3 C:\workspace.zf\wikiapp\public\index.php(26): Zend_Application->run()
+#4 {main}
+2009-08-12T16:20:46-05:00 ERR (3): Invalid controller specified (asdgasg)
+#0 C:\Program Files\Zend\ZendServer\share\ZendFramework\library\Zend\Controller\Front.php(945): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 C:\Program Files\Zend\ZendServer\share\ZendFramework\library\Zend\Application\Bootstrap\Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#2 C:\Program Files\Zend\ZendServer\share\ZendFramework\library\Zend\Application.php(328): Zend_Application_Bootstrap_Bootstrap->run()
+#3 C:\workspace.zf\wikiapp\public\index.php(26): Zend_Application->run()
+#4 {main}

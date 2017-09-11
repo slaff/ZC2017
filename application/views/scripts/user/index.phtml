@@ -1,0 +1,11 @@
+<?php 
+$this->headTitle()->prepend('Login') ;
+$this->form->setMethod('post')
+           ->setAction($this->urlHome . '/user/login');
+?>
+    <div id="content-body-login">
+        <div id="login-form">
+            <h3>Login to your Account</h3>
+            <?php echo $this->form ?>
+        </div>
+    </div>

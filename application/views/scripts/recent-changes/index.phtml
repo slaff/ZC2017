@@ -1,0 +1,16 @@
+<?php 
+$pageTitle = 'Recent Changes';
+$this->headTitle()->prepend($pageTitle); 
+?>
+    <div id="content-body">
+        <div id="wiki-content-left">
+            <?php echo $this->menuLeft() ?>
+            <?php echo $this->searchBox() ?>
+        </div>
+        <div id="wiki-content-main">
+            <h2><?php echo $pageTitle ?></h2>    
+            <ul>
+            <?php echo $this->partialLoop()->setObjectKey('listing')->partialLoop('article/_articlelink.phtml', $this->listings) ?>
+            </ul>
+        </div>
+    </div>

@@ -1,0 +1,41 @@
+<?php
+$this->headTitle()->prepend($this->pageTitle);
+?>
+    <div id="content-body">
+        <div id="wiki-content-left">
+            <?php echo $this->menuLeft() ?>
+            <?php echo $this->searchBox() ?>
+        </div>
+        <?php echo $this->articleHeader() ?>
+        <div id="wiki-content-main">
+			<h2><?php echo $this->escape($this->listing->title); ?></h2>
+			<p>Created by <a href="<?php
+echo $this->url(
+	array(
+		'controller'	=> 'user',
+		'action'		=> 'view',
+		'user'			=> $this->owner->user_id
+	),
+	null,
+	true
+)
+			?>"><?php echo $this->owner->real_name ?></a></p>
+			 <p>Last modified by <a href="<?php
+echo $this->url(
+	array(
+		'controller'	=> 'user',
+		'action'		=> 'view',
+		'user'			=> $this->lastModified->user_id
+	),
+	null,
+	true
+)
+			?>"><?php echo $this->lastModified->real_name ?></a></p>
+			<p><?php 
+			
+			echo $this->wikiText($this->listing->content);
+			
+			?></p>
+
+        </div>
+    </div>

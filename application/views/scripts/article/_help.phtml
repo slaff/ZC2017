@@ -1,0 +1,20 @@
+<?php
+
+$heading1   = $this->wikiText('{Heading1}');
+$heading2   = $this->wikiText('{{Heading2}}');
+$boldText   = $this->wikiText('{{{Some Bold Text}}}');
+?>
+<div class="help">
+    <h3>Editor Help</h3>
+    <p><span class="bold">FONT STYLES</span></p>
+
+    <p><?php echo $heading1 ?> {Heading1} - font-size: 140% font-weight: bold</p> 
+    <p><?php echo $heading2 ?> {{Heading2}} - font-size: 120%, font-weight: bold</p>
+    <p><?php echo $boldText ?> {{{Some Bold Text}}} - font-weight: bold
+
+    <p><span class="bold">LINKS</span><p>
+
+    <p>[Internal MyWiki Title]</p>  
+    <p>[[External URL Title|ExternalURL] ex: [Zend Framework|http://framework.zend.com]</p>                
+</div>
+
