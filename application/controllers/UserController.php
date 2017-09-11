@@ -47,6 +47,13 @@ class UserController extends Zend_Controller_Action
             $userTable->find($adapter->getResultRowObject('user_id')->user_id)->current()
         );
 
+        
+        // New Smart Student: Record all successful logins in MySQL for later review
+        $link = mysql_connect("localhost", "user", "password");
+        mysql_db_query(sprintf("INSERT INTO logs(user, event) ('%s','login')", $form->getValue('username')));
+        mysql_close($link);
+        // ----
+        
         // Redirect to home page
         $this->_redirect('/');
     }
