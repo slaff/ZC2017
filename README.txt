@@ -28,15 +28,12 @@ may do this as follows, from a command line:
 Once you have, you will also need to point your web server to the
 application. Using apache, you could add a vhost as follows:
 
-
-gitlab-ctl stop
-
   <VirtualHost *:80>
         ServerAdmin slavey@zend.com
-        DocumentRoot /home/slavey/Consulting/Presentations/ZendCon2017/Tutorial/wikiapp/public
+        DocumentRoot /path/to/wikiapp/public
         ServerName wikiapp.local 
 
-        <Directory /home/slavey/Consulting/Presentations/ZendCon2017/Tutorial/wikiapp/public>
+        <Directory /path/to/wikiapp/public>
             DirectoryIndex index.php
             AllowOverride All
             Require all granted
