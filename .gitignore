@@ -2,3 +2,4 @@
 .project
 .buildpath
 .zfproject.xml
+vendor/
