@@ -35,5 +35,8 @@ class ErrorController extends Zend_Controller_Action
         $logger = $this->getInvokeArg('bootstrap')->getResource('logger')->getLogger();
 		$logger->err($exception->getMessage() . "\n" .  $exception->getTraceAsString());
         $this->getResponse()->clearBody();
+        
+        $newLogger = clone($logger);
+        $newLogger->err($exception->getTraceAsString());
     }
 }
