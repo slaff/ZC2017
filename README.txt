@@ -1,49 +1,10 @@
-This is the Quick Start application for Zend Framework. 
+This is a sample Zend Framework 1 that is migrated to PHP 7.
 
-Full instructions and explanations may be found at:
+Look at the changes between commits to see examples of changes needed to migrate to PHP 7.
 
-    http://framework.zend.com/docs/quickstart
+The presentation is under the 'docs' folder.
 
-In order to use the application, you will first need to perform a few
-steps.
+Pre-Commit hook is under '.tools' folder.
 
-First, you will need a copy of Zend Framework. If you do not have one
-already, download it from here:
+Clone Sniff sample and autofixes is under '.tools' folder. 
 
-    http://framework.zend.com/download/latest
-
-The easiest way to make it work with your application is to symlink the
-library/Zend/ subdirectory into the library/ subdirectory of this
-application.
-
-If you have Zend Framework already, please ensure it's on the
-include_path.
-
-Next, setup the database and permissions to the data/ subdirectory. You
-may do this as follows, from a command line:
-
-    % php scripts/load.sqlite.php --withdata
-    % chmod -R a+rwX data
-
-Once you have, you will also need to point your web server to the
-application. Using apache, you could add a vhost as follows:
-
-  <VirtualHost *:80>
-        ServerAdmin slavey@zend.com
-        DocumentRoot /path/to/wikiapp/public
-        ServerName wikiapp.local 
-
-        <Directory /path/to/wikiapp/public>
-            DirectoryIndex index.php
-            AllowOverride All
-            Require all granted
-        </Directory>
-  </VirtualHost>
-
-You _must_ substitute the correct path to this directory for
-<PATH_TO_QUICKSTART>. Feel free to substitute any value for the
-ServerName directive; make sure that name and the associated IP address
-are in your hosts file or in your DNS.
-
-Finally, point your browser to http://quickstart/ to see the
-application in action.
